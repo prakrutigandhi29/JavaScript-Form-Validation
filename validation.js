@@ -17,7 +17,7 @@ function formValidation(){
     let flag=true;
     
 if(name!=""){
-    if(!name.match(/^[A-Za-z]+$/)){
+    if(!name.match(/^[A-Za-z ]+$/)){
         document.querySelector(".name-err").textContent="Name should not contain any special characters or digits";
         flag=false;
     }
@@ -31,7 +31,7 @@ else{
 }
 
 if(phone!=""){
-    if(!phone.match(/^\+(?:[0-9] ?){6,14}[0-9]$/)){
+    if(!phone.match(/^[6-9][0-9]{9}$/)){
         document.querySelector(".phone-err").textContent="Please enter valid phone number";
         flag=false;
     }
