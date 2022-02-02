@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    background-image: url("images/bg.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.container{
+    margin:auto;
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    background-color: white;
+    border-radius:7px;
+}
+form{
+    margin:auto;
+    padding:25px;
+    text-align:center;
+}
+h1,h3{
+    margin:auto;
+}
+h3{
+    color:green;
+}
+form input{
+    display: block;
+    padding-top:10px;
+    width:200px;
+    margin:auto; 
+}
+select{
+    display: block;
+    padding-top:10px;
+    width:200px;  
+    margin:auto; 
+}
+span{
+    padding:0;
+    text-align: center;
+}
+.date-err, .phone-err, .pass-err, .conpass-err, .gender-err, .email-err, .name-err{
+    color:red;
+}
